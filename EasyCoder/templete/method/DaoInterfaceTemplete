@@ -1,0 +1,16 @@
+package -{packageName}.dao;
+
+import -{packageName}.model.-{voType};
+import java.util.Date;
+
+-{head}
+public interface -{daoInterfaceName} {
+
+    public boolean insert(-{voType} model);
+
+    public -{voType} query(int uid);
+
+    public boolean update(-{voType} model);
+
+    public void delete(int uid);
+}

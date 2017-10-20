@@ -1,0 +1,24 @@
+private int[] marks;//8种印章数量
+private int key;//钥匙数
+private int ticket;//邀请卡数
+private int createTime;//玩家建号时间
+
+private int step;//0-未领鱼 1-未领装扮 2-完成
+
+private String friendHelpStr;//体力的好友帮助列表
+private int helpCDLeftTime;//领取好友帮助体力的cd倒计时,秒
+private int getHelpRewardTime;//领取好友帮助体力的时间,秒
+
+private int markGuarantee;//抽勋章保底
+
+private int[] shopFishes;//周年小铺销售的鱼metaId
+private int shopRefreshTime;//周年小铺更新时间
+
+
+private Map<Integer,Integer> boxPool;//宝箱奖励池
+private Map<Integer,Integer> boxRewardNumPool;//宝箱奖励数量池
+
+
+
+
+

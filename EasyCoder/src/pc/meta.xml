@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<act_meta version="38">
+    <act id="43" name="eightyears" flag="true" start_time="2017-09-26 00:00:00" end_time="2017-10-17 00:00:00"
+         reward_hour="48" dc_id="" desc="中秋">
+            
+        <gift_list>
+                  
+            <gift id="1" desc="周年宝箱可以开到的奖励">
+                     
+                <item id="1" type="fish" meta_id="0" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="2" type="discountCard" meta_id="5" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="3" type="discountCard" meta_id="7" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="4" type="coll" meta_id="30" meta_num="3" random="0" extra="0"/>
+                     
+                <item id="5" type="coll" meta_id="29" meta_num="3" random="0" extra="0"/>
+                     
+                <item id="6" type="prop" meta_id="11" meta_num="15" random="0" extra="0"/>
+                     
+                <item id="7" type="prop" meta_id="22" meta_num="5" random="0" extra="0"/>
+                     
+                <item id="8" type="prop" meta_id="4" meta_num="2" random="0" extra="0"/>
+                     
+                <item id="9" type="prop" meta_id="36" meta_num="5" random="0" extra="0"/>
+                     
+                <item id="10" type="prop" meta_id="37" meta_num="2" random="0" extra="0"/>
+                     
+                <item id="11" type="pet" meta_id="45" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="12" type="pet" meta_id="16" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="13" type="food" meta_id="14" meta_num="2" random="0" extra="0"/>
+                     
+                <item id="14" type="loginMark" meta_id="0" meta_num="5" random="0" extra="0"/>
+                     
+                <item id="15" type="experience" meta_id="0" meta_num="2888" random="0" extra="0"/>
+
+            </gift>
+
+            <gift id="2" desc="沙漏鱼列表">
+                     
+                <item id="1" type="fish" meta_id="495" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="2" type="fish" meta_id="496" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="3" type="fish" meta_id="497" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="4" type="fish" meta_id="498" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="5" type="fish" meta_id="499" meta_num="1" random="0" extra="0"/>
+            </gift>
+            <gift id="3" desc="销售鱼列表">
+                     
+                <item id="1" type="fish" meta_id="675" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="2" type="fish" meta_id="676" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="3" type="fish" meta_id="677" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="4" type="fish" meta_id="678" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="5" type="fish" meta_id="679" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="6" type="fish" meta_id="680" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="7" type="fish" meta_id="5118" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="8" type="fish" meta_id="5119" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="9" type="fish" meta_id="5120" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="10" type="fish" meta_id="5121" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="11" type="fish" meta_id="5122" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="12" type="fish" meta_id="5123" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="13" type="fish" meta_id="5124" meta_num="1" random="0" extra="0"/>
+            </gift>
+            <gift id="4" desc="蛋糕鱼列表">
+                     
+                <item id="1" type="fish" meta_id="5283" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="2" type="fish" meta_id="5284" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="3" type="fish" meta_id="5285" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="4" type="fish" meta_id="5286" meta_num="1" random="0" extra="0"/>
+                     
+                <item id="5" type="fish" meta_id="5287" meta_num="1" random="0" extra="0"/>
+
+            </gift>
+        </gift_list>
+
+            
+        <pool_list>
+            <pool id="1" desc="周年宝箱可以开到的奖励池">
+                     
+                <item id="1" info="0" num="1"/>
+                     
+                <item id="1" info="0" num="1"/>
+                     
+                <item id="2" info="0" num="1"/>
+                     
+                <item id="3" info="0" num="1"/>
+                     
+                <item id="4" info="0" num="1"/>
+                     
+                <item id="5" info="0" num="1"/>
+                     
+                <item id="6" info="0" num="1"/>
+                     
+                <item id="7" info="0" num="1"/>
+                     
+                <item id="8" info="0" num="1"/>
+                     
+                <item id="9" info="0" num="1"/>
+                     
+                <item id="10" info="0" num="1"/>
+                     
+                <item id="11" info="0" num="1"/>
+                     
+                <item id="12" info="0" num="1"/>
+                     
+                <item id="13" info="0" num="1"/>
+                     
+                <item id="14" info="0" num="1"/>
+                     
+                <item id="15" info="0" num="1"/>
+            </pool>
+              
+            <pool id="2" desc="每次开宝箱能抽到的奖励种类池">
+                     
+                <item id="1" info="0" num="3"/>
+                     
+                <item id="2" info="0" num="3"/>
+                     
+                <item id="3" info="0" num="2"/>
+            </pool>
+
+
+            <pool id="3" desc="销售鱼池">
+                     
+                <item id="1" info="0" num="1"/>
+                     
+                <item id="2" info="0" num="1"/>
+                     
+                <item id="3" info="0" num="1"/>
+                     
+                <item id="4" info="0" num="1"/>
+                     
+                <item id="5" info="0" num="1"/>
+                     
+                <item id="6" info="0" num="1"/>
+                     
+                <item id="7" info="0" num="1"/>
+                     
+                <item id="8" info="0" num="1"/>
+                     
+                <item id="9" info="0" num="1"/>
+                     
+                <item id="10" info="0" num="1"/>
+                     
+                <item id="11" info="0" num="1"/>
+                     
+                <item id="12" info="0" num="1"/>
+                     
+                <item id="13" info="0" num="1"/>
+            </pool>
+
+        </pool_list>
+
+        <param_list>
+                  
+            <param name="priceBuyHelp" value="2" desc="元宝价--购买一个好友帮助"/>
+                  
+            <param name="needFriHelpNum" value="12" desc="需要好友帮助数量"/>
+            <param name="numGetFromFriHelp" value="2" desc="好友帮助能获得的邀请函"/>
+                  
+            <param name="priceClearHelpCD" value="12" desc="元宝价--清理好友帮助cd"/>
+                  
+
+            <param name="gameCostTicket" value="1" desc="每次游戏消耗邀请函"/>
+
+            <param name="cakeMax" value="80" desc="切蛋糕需求上限,单位%"/>
+            <param name="cakeMin" value="20" desc="切蛋糕需求下限,单位%"/>
+
+            <param name="getKeyMaxOffset" value="10" desc="获得钥匙允许最大误差,单位%"/>
+            <param name="cakeGetMarkNum" value="2" desc="每次切蛋糕获得勋章个数"/>
+
+
+            <param name="markTypeGuarantee1" value="6" desc="前n次纯概率"/>
+            <param name="markTypeGuarantee2" value="4" desc="后n次补最少的"/>
+
+            <param name="priceMarkTypeSwitch" value="3" desc="勋章转换,元宝（单次）"/>
+            <param name="MarkTypeSwitchCostLoginMarkNum" value="5" desc="勋章转换,印章（单次）"/>
+
+            <param name="excFishNeedMarkSeries" value="1" desc="蛋糕鱼兑换需要的n套勋章"/>
+            <param name="openBoxCostKey" value="1" desc="开周年宝箱需要钥匙数量（单次）"/>
+
+            <param name="openBoxOnceGetFishMaxNum" value="1" desc="每次开宝箱时最多只出现1条鱼"/>
+            <param name="priceBuyFish" value="28" desc="周年小铺，鱼价格"/>
+            <param name="eachShowFishNum" value="4" desc="周年小铺,每次卖鱼种类数"/>
+            <param name="priceRefreshShop" value="1" desc="刷新周年小铺元宝价"/>
+            <param name="buyFishSendKey" value="1" desc="周年小铺买鱼送钥匙数"/>
+
+            <param name="decoMetaId" value="2769" desc="新背景的metaId"/>
+
+        </param_list>
+          
+    </act>
+</act_meta>

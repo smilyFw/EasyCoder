@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <param name="version"  type = "int" desc="版本号，每次更新，默认活动起始时间" backOnly="1"/>
+    <param name="priceBuyHelp"  type = "int" desc="元宝价--购买一个好友帮助"/>
+    <param name="needFriHelpNum" type = "int" desc="需要好友帮助数量"/>
+</root>

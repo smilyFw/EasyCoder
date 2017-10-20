@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root actionName="eightYears" packageName="com.twofish.fishbowl.activity" comments="八周年" author="wenwen.fu"
+      doName="/eightYears.do">
+
+    <method name="getInfo" comments="打开主面板">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="meta" type="Object" comments="活动配置"/>
+            <param name="actLeftTime" type="long" comments="活动结束倒计时，包含48小时，单位毫秒"/>
+        </response>
+    </method>
+
+
+    <method name="getFish" comments="领取鱼">
+        <request>
+            <param name="fishMetaId" type="int" comments="鱼metaId"/>
+        </request>
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="奖励vos"/>
+        </response>
+    </method>
+
+    <method name="getDeco" comments="领取背景">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="奖励vos"/>
+        </response>
+    </method>
+
+    <method name="openBox" comments="钥匙开宝箱">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="奖励vos"/>
+        </response>
+    </method>
+
+
+    <method name="clearHelpCD" comments="清理帮助cd">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="costShell" type="int" comments="消耗的元宝数"/>
+        </response>
+    </method>
+
+    <method name="buyFriHelp" comments="购买好友帮助">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="costShell" type="int" comments="消耗的元宝数"/>
+        </response>
+    </method>
+
+    <method name="getHelpReward" comments="领取好友帮助获得的邀请卡">
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+
+    <method name="cut" comments="切蛋糕">
+        <request>
+            <param name="offset" type="int" comments="误差，单位%"/>
+        </request>
+
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="addMark" type="int[]" comments="增加的勋章种类"/>
+            <param name="addKey" type="int" comments="增加的钥匙数"/>
+        </response>
+    </method>
+
+    <method name="switchMark" comments="勋章转换">
+        <request>
+            <param name="from" type="int" comments="源勋章id"/>
+            <param name="to" type="int" comments="目标勋章id"/>
+            <param name="num" type="int" comments="数量"/>
+            <param name="costShell" type="int" comments="消耗元宝数"/>
+        </request>
+
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+
+    <method name="excFish" comments="勋章兑换">
+        <request>
+            <param name="fishMetaId" type="int" comments="鱼metaId"/>
+            <param name="num" type="int" comments="数量"/>
+        </request>
+
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+
+    <method name="sendFish" comments="赠鱼">
+        <request>
+            <param name="num" type="int" comments="数量"/>
+            <param name="msg" type="String" comments="留言"/>
+            <param name="fbId" type="long" comments="好友fbId"/>
+            <param name="sendInfo" type="String" comments="好友选择器回调信息"/>
+            <param name="fishMetaId" type="int" comments="鱼metaId"/>
+
+        </request>
+
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="addKey" type="int" comments="增加钥匙"/>
+
+        </response>
+    </method>
+
+    <method name="buyFish" comments="买鱼">
+        <request>
+            <param name="num" type="int" comments="数量"/>
+            <param name="fishMetaId" type="int" comments="鱼metaId"/>
+        </request>
+
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="鱼奖励"/>
+            <param name="addKey" type="int" comments="增加钥匙"/>
+
+        </response>
+    </method>
+
+
+    <method name="refresh" comments="刷新商店">
+        <request>
+            <param name="costShell" type="int" comments="花费元宝数"/>
+        </request>
+        <response>
+            <param name="mainWindowVO" type="EightYearsUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+
+
+</root>
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<act_meta version="34">
+    <act id="37" name="easter" flag="true" start_time="2017-04-13 00:00:00" end_time="2017-04-25 00:00:00"
+         reward_hour="48" dc_id=" 170413_Easter" desc="复活节">
+        <gift_list>
+            <gift id="1" desc="蛋2里的奖励">
+                     <item id="1" type="fish" meta_id="648" meta_num="1" random="5,155"/>
+                     <item id="2" type="fish" meta_id="220" meta_num="1" random="7,150"/>
+                     <item id="3" type="fish" meta_id="5060" meta_num="1" random="9,225"/>
+                     <item id="4" type="fish" meta_id="5059" meta_num="1" random="9,270"/>
+                     <item id="5" type="pet" meta_id="33" meta_num="1" random="10,200"/>
+                     <item id="6" type="prop" meta_id="36" meta_num="1" random="10,0"/>
+                     <item id="7" type="prop" meta_id="37" meta_num="1" random="20,0"/>
+                     <item id="8" type="deco" meta_id="1690" meta_num="1" random="10,0"/>
+                     <item id="9" type="deco" meta_id="1699" meta_num="1" random="10,0"/>
+            </gift>
+        </gift_list>
+        <param_list>
+            <param name="version" value="170413" desc="版本号，每次更新，默认活动起始时间"/>
+
+            <param name="priceBuyHelp" value="2" desc="元宝价--购买一个好友帮助"/>
+            <param name="needFriHelpNum" value="12" desc="需要好友帮助数量"/>
+            <param name="priceClearHelpCD" value="12" desc="元宝价--清理好友帮助cd"/>
+
+            <param name="numGetFromFriHelp" value="10" desc="好友帮助能获得的纽扣数"/>
+
+            <param name="freeGameNum" value="2" desc="每天可免费押注次数"/>
+            <param name="priceBuyGameNum" value="6" desc="元宝价--购买游戏次数"/>
+
+            <param name="gameCostTotalButton" value="5" desc="每次押注共消耗纽扣数"/>
+            <param name="selectedEggCostTotalButton" value="3" desc="押注的那个蛋消耗纽扣数"/>
+            <param name="noSelectedEggCostTotalButton" value="1" desc="没押注的那两个蛋消耗纽扣数"/>
+
+            <param name="buyFishMetaId" value="5205" desc="买鱼的metaId"/>
+            <param name="priceBuyFish" value="28" desc="元宝价--购买鱼"/>
+            <param name="buyFishGetButton" value="2" desc="买/赠1条鱼获得的纽扣数"/>
+
+            <param name="excFishMetaId" value="5204" desc="兑换鱼的metaId"/>
+            <param name="excFishCostButton" value="12" desc="兑换鱼消耗的纽扣数"/>
+            <param name="excFishCostCloth" value="20" desc="兑换鱼消耗的布料数"/>
+
+            <param name="gameSucGotButtonRate" value="2" desc="押中获得押注纽扣数的倍数"/>
+
+            <param name="gameSucRandom" value="2" desc="连续错N次，则下次一定押对的N值"/>
+            <param name="fishRandom" value="3" desc="连续N次没获得，则走概率2"/>
+
+            <param name="egg1Range" value="4,7" desc="蛋滚的圈数范围"/>
+            <param name="egg2Range" value="4,8" desc="蛋滚的圈数范围"/>
+            <param name="egg3Range" value="5,9" desc="蛋滚的圈数范围"/>
+
+            <param name="egg1ClothNum" value="8" desc="蛋1装的布料数"/>
+            <param name="egg3ClothNum" value="5" desc="蛋3装的布料数"/>
+
+        </param_list>
+    </act>
+</act_meta>

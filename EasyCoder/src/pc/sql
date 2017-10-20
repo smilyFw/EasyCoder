@@ -1,0 +1,12 @@
+CREATE TABLE `act_user` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `uid` int(16) NOT NULL COMMENT '玩家游戏内id',
+
+  PRIMARY KEY  (`id`),
+
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+
+
+
+

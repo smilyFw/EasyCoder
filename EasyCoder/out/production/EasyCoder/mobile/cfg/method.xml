@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <method name="getInfo" comments="打开主面板">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="meta" type="Object" comments="活动配置"/>
+            <param name="actLeftTime" type="long" comments="活动结束倒计时，包含48小时，单位毫秒"/>
+        </response>
+    </method>
+
+
+    <method name="excFish" comments="兑换鱼">
+        <request>
+            <param name="num" type="int" comments="兑换鱼数量"/>
+        </request>
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="奖励vos"/>
+        </response>
+    </method>
+
+
+    <method name="buyFish" comments="买鱼">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="奖励vos"/>
+            <param name="costShell" type="int" comments="消耗元宝数"/>
+            <param name="addButtonNum" type="int" comments="增加的按钮数"/>
+        </response>
+    </method>
+
+    <method name="sendFish" comments="送鱼">
+        <request>
+            <param name="num" type="int" comments="数量"/>
+            <param name="msg" type="String" comments="留言"/>
+            <param name="fbId" type="long" comments="好友fbId"/>
+            <param name="sendInfo" type="String" comments="好友选择器回调信息"/>
+        </request>
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="costShell" type="int" comments="消耗的元宝数"/>
+            <param name="addButtonNum" type="int" comments="增加的按钮数"/>
+        </response>
+    </method>
+
+
+
+
+    <method name="buyGameNum" comments="购买游戏机会">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+
+    <method name="game" comments="下注">
+        <request>
+            <param name="id" type="int" comments="押注的蛋的id"/>
+        </request>
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="vos" type="Array" comments="蛋里的奖励"/>
+            <param name="success" type="int" comments="是否成功  1-成功  0-失败"/>
+            <param name="egg1RunNum" type="int" comments="蛋1滚的圈数"/>
+            <param name="egg2RunNum" type="int" comments="蛋2滚的圈数"/>
+            <param name="egg3RunNum" type="int" comments="蛋3滚的圈数"/>
+
+        </response>
+    </method>
+
+    <method name="clearHelpCD" comments="清理帮助cd">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="costShell" type="int" comments="消耗的元宝数"/>
+        </response>
+    </method>
+
+    <method name="buyFriHelp" comments="购买好友帮助">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+            <param name="costShell" type="int" comments="消耗的元宝数"/>
+        </response>
+    </method>
+
+
+    <method name="getHelpReward" comments="领取好友帮助获得的纽扣">
+        <response>
+            <param name="mainWindowVO" type="EasterUserVO" comments="user数据"/>
+        </response>
+    </method>
+
+</root>
+
+

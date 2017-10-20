@@ -1,0 +1,7 @@
+    public -{paramType} get-{Param}() {
+        return -{param};
+    }
+
+    public void set-{Param}(-{paramType} -{param}) {
+        this.-{param} = -{param};
+    }

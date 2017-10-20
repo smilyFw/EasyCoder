@@ -1,0 +1,9 @@
+    /**-{des}
+     */
+    -{injectParams}
+    public void -{methodName}(long userId, IActivityReq req, IActivityResp resp) {
+        ResponseUtils.setFailed(resp);
+        -{ProjectId}Data data = logic.-{methodName}(resp, userId-{methodParams});
+        ResponseUtils.setSuccess(resp);
+        ResponseUtils.setUserData(resp, data.toClient());
+    }

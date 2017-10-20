@@ -1,0 +1,23 @@
+    /**-{des}
+    *@param uid 玩家uid
+    */
+    public Map<String, Object> -{methodName}(int uid-{params}) {
+        Map<String, Object> resultMap = new HashMap<String, Object>();
+        resultMap.put(CODE, ErrorCode.ERROR_NOT_KNOWN);
+        try {
+            ActMeta actMeta = getActMeta();
+            checkIsOpen(actMeta);
+            -{ProjectId}UserVO user = getUser(uid);
+
+             //TODO
+            resultMap.put(CODE, CODE_SUCC);
+            -{returnParams}
+        } catch (IllegalStateException e) {
+            resultMap.put("msg", e.getMessage());
+        } catch (IllegalArgumentException e) {
+            resultMap.put(CODE, Integer.parseInt(e.getMessage()));
+        }catch (Exception e) {
+            logger.error("-{ProjectId}Mgr.-{methodName}()",e);
+        }
+        return resultMap;
+    }

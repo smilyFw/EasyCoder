@@ -1,0 +1,13 @@
+-{des}
+function Net:req_-{methodName}(-{requestParam1}okCallBack)
+	local function onResponse(event, respData)
+		if not respData then
+			return
+		end
+
+		-{responseParams}
+
+		local t=okCallBack and okCallBack(respData)
+	end
+	self:httpRequest("-{methodName}",{-{requestParam2}},onResponse,cost)
+end

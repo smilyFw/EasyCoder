@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1">
+    <lua></lua>
+    <!--领奖时间-->
+    <reserve>1</reserve>
+    <dcId></dcId>
+    <!--首登赠送魔镜数量-->
+    <firstSendMirrorNum>1</firstSendMirrorNum>
+    <!--每日登陆赠送入场券数量 -->
+    <dailySendTicketNum>3</dailySendTicketNum>
+
+    <!--物品购买价格列表-->
+    <buyList>
+        <item index="0" meta="1" count="1" price="6" itemId="1" itemName="入场券" name="入场券"/>
+        <item index="1" meta="1" count="1" price="3" itemId="1" itemName="魔镜" name="魔镜"/>
+        <item index="2" meta="1" count="1" price="3" itemId="1" itemName="魔法棒" name="魔法棒"/>
+    </buyList>
+
+    <!--天使恶魔数量池-->
+    <!--id-池id-->
+    <!--good-天使数量-->
+    <!--bad-恶魔数量-->
+    <!--pool-份数-->
+    <goodBadNumPool>
+        <item index="0" id="1" good="4" bad="2" pool="2"/>
+        <item index="1" id="2" good="5" bad="1" pool="2"/>
+    </goodBadNumPool>
+
+    <!--恶魔出现保底池-->
+    <!--id-前几次不出-->
+    <!--pool-份数-->
+    <badNotShowPool>
+        <item index="0" id="1" pool="1"/>
+        <item index="1" id="2" pool="3"/>
+        <item index="2" id="3" pool="5"/>
+        <item index="3" id="4" pool="3"/>
+    </badNotShowPool>
+
+
+    <!---每日免费普通转换次数-->
+    <dailyFreeNormalSwitch>2</dailyFreeNormalSwitch>
+    <!---普通转换  costSource-消耗源材料数  costProp消耗魔法棒数-->
+    <normalSwitch costSource="3" costProp="1"/>
+    <!---高级转换  costSource-消耗源材料数  costProp消耗魔法棒数-->
+    <specialSwitch costSource="1" costProp="3"/>
+    <!---感恩天使获得光明石数量-->
+    <treatGoodGetNum1>2</treatGoodGetNum1>
+
+    <!--同时完成所有成就N次可抽取一次鱼-->
+    <achieveNeed>15</achieveNeed>
+    <!--成就奖池-->
+    <achievePool>
+        <item index="0" type="REWARD_TYPE_FISH" meta="101953" count="1" pool="2" name="卖萌紫面具鱼" dcCat="fish7"/>
+        <item index="1" type="REWARD_TYPE_FISH" meta="101150" count="1" pool="2" name="南瓜鱼" dcCat="fish8"/>
+        <item index="2" type="REWARD_TYPE_FISH" meta="101390" count="1" pool="2" name="灵梦小巫女" dcCat="fish9"/>
+        <item index="3" type="REWARD_TYPE_FISH" meta="101138" count="1" pool="2" name="紫色小鬼鱼" dcCat="fish10"/>
+    </achievePool>
+
+    <!--兑换列表-->
+    <excList>
+        <item index="0" type="REWARD_TYPE_SHELL_TICKET" meta="19101" count="3" costNum1="50" costNum2="0" max="400" name="贝壳券" dcCat="1"/>
+        <item index="1" type="REWARD_TYPE_GENE_TOOL" meta="33001" count="3" costNum1="0" costNum2="50" max="400" name="笛子" dcCat="1"/>
+        <item index="2" type="REWARD_TYPE_FISH" meta="104941" count="1" costNum1="300" costNum2="100" max="-1" name="鱼" dcCat="1"/>
+        <item index="3" type="REWARD_TYPE_FISH" meta="104941" count="1" costNum1="300" costNum2="100" max="-1" name="鱼" dcCat="1"/>
+        <item index="4" type="REWARD_TYPE_FISH" meta="104941" count="1" costNum1="300" costNum2="100" max="-1" name="鱼" dcCat="1"/>
+    </excList>
+
+</root>

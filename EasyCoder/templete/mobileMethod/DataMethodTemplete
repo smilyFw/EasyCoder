@@ -1,0 +1,13 @@
+    /**-{des}
+     *
+     * @param resp 返回的数据
+     * @param userId 玩家uid
+     */
+    public -{ProjectId}Data -{methodName}(IActivityResp resp, long userId-{params}) {
+        //param check
+
+        -{ProjectId}Data data = -{ProjectId}Data.fetch(userId);
+
+-{returnParams}
+        return data;
+    }

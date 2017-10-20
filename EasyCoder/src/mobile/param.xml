@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <param name="gameNum" type="int" desc="入场券"/>
+    <param name="mirrorNum" type="int" desc="游戏道具个数-魔镜"/>
+    <param name="num1" type="int" desc="光之石"/>
+    <param name="num2" type="int" desc="暗之石"/>
+
+    <param name="gaming" type="boolean" desc="是否在游戏中"/>
+    <param name="gameGoodNum" type="int" desc="天使人数"/>
+    <param name="gameBadNum" type="int" desc="恶魔人数"/>
+    <param name="gameInfoArr" type="int[]"
+           desc="小白人状态数组，=0没互动;大于0已互动（1-天使  2-恶魔）;  小于0 使用了道具,表示使用道具后揭露的小白人身份 -1天使 ,-2恶魔"/>
+    <param name="badNotShowPoolId" type="int" desc="前几次不出恶魔保底池id" backOnly="1"/>
+    <param name="badNotShowPool" type="Map" desc="前几次不出恶魔保底池" backOnly="1"/>
+
+    <param name="gameTempTreatGood" type="int" desc="游戏临时数据-招待天使数" backOnly="1"/>
+    <param name="gameTempTreatBad" type="int" desc="游戏临时数据-招待恶魔数" backOnly="1"/>
+    <param name="gameTempTrickGood" type="int" desc="游戏临时数据-惩治天使数" backOnly="1"/>
+    <param name="gameTempTrickBad" type="int" desc="游戏临时数据-惩治恶魔数" backOnly="1"/>
+    <param name="gameTempNum1" type="int" desc="游戏临时数据-获得光之石数量" backOnly="1"/>
+    <param name="gameTempNum2" type="int" desc="游戏临时数据-获得暗之石数量" backOnly="1"/>
+
+
+    <param name="achArr" type="int[]" desc="成就1-游戏次数,成就2-惩治狼人,成就3-转换次数"/>
+    <param name="rewardAchTimes" type="int" desc="已抽鱼次数，同时完成以下三个成就可抽取一次鱼"/>
+
+    <param name="switchPropNum" type="int" desc="石头转换道具个数-魔法棒"/>
+    <param name="freeNum" type="int" desc="免费普通转换次数"/>
+    <param name="freeRefreshTime" type="int" desc="免费普通转换次数更新时间" backOnly="1"/>
+    <param name="freeRefreshLeftTime" type="int" desc="免费普通转换次数更新倒计时"/>
+
+
+
+    <param name="badGoodNumPool" type="Map" desc="天使恶魔数量分布池" backOnly="1"/>
+
+    <param name="excNumArr" type="int[]" desc="已兑换数量" backOnly="1"/>
+
+
+</root>

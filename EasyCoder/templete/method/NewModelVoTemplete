@@ -1,0 +1,14 @@
+package -{packageName}.model;
+import com.twofish.fishbowl.activity.base.ActDataBaseVO;
+import java.util.Map;
+
+
+-{head}
+public class -{className} extends ActDataBaseVO{
+-{params}
+-{methods}
+    @Override
+    public void init() {
+
+    }
+}

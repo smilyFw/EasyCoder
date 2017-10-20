@@ -1,0 +1,24 @@
+/**玩家uid*/
+    private int uid;
+    /**水滴*/
+    private int waterNum;
+    /**体力*/
+    private int powerNum;
+    /**被砸数量*/
+    private int knockedNum;
+    /**领取被砸成就奖励次数*/
+    private int gotAchieveNum;
+    /**起始索引值*/
+    private int startIndex;
+    /**当前位置索引值*/
+    private int curIndex;
+    /**画面能显示的最小索引值*/
+    private int mapMinIndex;
+    /**画面能显示的最大索引值*/
+    private int mapMaxIndex;
+  /**好友帮助列表*/
+    private String friendHelpStr;
+    /**领取好友帮助cd，单位毫秒*/
+    private long helpCDLeftTime;
+    /**游戏位置数据*/
+    private list<Fool2017LocVO> gameInfo;

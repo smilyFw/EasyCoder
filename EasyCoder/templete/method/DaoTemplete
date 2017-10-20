@@ -1,0 +1,115 @@
+package -{packageName}.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.twofish.fishbowl.util.CacheUtil;
+import org.apache.log4j.Logger;
+
+import com.google.inject.Singleton;
+import com.twofish.core.dao.OpUniq;
+import com.twofish.core.dao.OpUpdate;
+import -{packageName}.model.-{voType};
+import com.twofish.fishbowl.dao.db.BaseDao;
+import com.twofish.fishbowl.util.MemcacheConstant;
+import com.twofish.util.Time;
+
+-{head}
+@Singleton
+public class -{daoName} extends BaseDao implements -{daoInterfaceName}{
+
+    private final static Logger logger = Logger.getLogger(-{daoName}.class);
+
+    private static final String CACHE_PREFIX = "-{tableName}_";
+
+    private static final String DB_INSTANCE_NAME = "fishfish2";
+
+    private static final String DB_TABLE_NAME = "-{tableName}";
+
+    private String getKey(Object cacheBy) {
+        return MemcacheConstant.KEY_PREFIX + CACHE_PREFIX + cacheBy;
+    }
+
+    private String getTableName(Integer shardBy) {
+        return shardBy != null ? DB_TABLE_NAME + "_" + Integer.valueOf(shardBy % 100).toString() : DB_TABLE_NAME;
+    }
+
+    @Override
+    public -{voType} query(final int uid){
+        Object obj = CacheUtil.getCache(getKey(uid));
+        -{voType} r = (-{voType}) obj;
+        if (r != null) {
+            return r;
+        }
+        String sqlStr = "select * from " + getTableName(null) + " where uid=?";
+        OpUniq op = new OpUniq(sqlStr, DB_INSTANCE_NAME) {
+            @Override
+            public void setParam(PreparedStatement ps) throws SQLException {
+                ps.setInt(1, uid);
+            }
+            public Object parse(ResultSet rs) throws SQLException {
+                try {
+                    -{voType} model = new -{voType}();
+-{queryParse}
+                    return model;
+                } catch (Exception e) {
+                    logger.error("query -{voType} from DB error.", e);
+                }
+                return null;
+            }
+        };
+        r = (-{voType}) super.queryUnique(op);
+        if (r != null) {
+            CacheUtil.setCache(getKey(uid), r);
+        }
+        return r;
+    }
+
+
+    @Override
+    public boolean insert(final -{voType} model){
+        String sqlStr = "insert into " + getTableName(null) + " -{insertParamStr}";
+        OpUpdate op = new OpUpdate(sqlStr, DB_INSTANCE_NAME) {
+            @Override
+            public void setParam(PreparedStatement ps) throws SQLException {
+-{setInsertParam}
+            }
+        };
+        boolean r = super.insertReturnId(op) > 0;
+        if(r){
+           CacheUtil.setCache(getKey(model.getUid()),model);
+        }
+        return r;
+    }
+
+    @Override
+    public boolean update(final -{voType} model){
+        String sqlStr = "update " + getTableName(null) + " set -{updateParamStr} where uid=?";
+        OpUpdate op = new OpUpdate(sqlStr, DB_INSTANCE_NAME) {
+            @Override
+            public void setParam(PreparedStatement ps) throws SQLException {
+-{setUpdateParam}
+            }
+        };
+        boolean r = super.update(op) > 0;
+        if(r){
+            CacheUtil.setCache(getKey(model.getUid()), model);
+        }
+        return r;
+    }
+
+    @Override
+    public void delete(final int uid){
+        String sqlStr = "delete from " + getTableName(null) + " where uid=?";
+        OpUpdate op = new OpUpdate(sqlStr, DB_INSTANCE_NAME) {
+            @Override
+            public void setParam(PreparedStatement ps) throws SQLException {
+                ps.setInt(1, uid);
+            }
+        };
+        super.update(op);
+        CacheUtil.deleteCache(getKey(uid));
+    }
+
+}

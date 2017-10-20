@@ -1,0 +1,22 @@
+CREATE TABLE `fool2017_user`(
+`uid` int(11) unsigned NOT NULL comment '玩家uid',
+`water_num` int(4) NOT NULL default 0 comment '水滴',
+`power_num` int(4) NOT NULL default 0 comment '体力',
+`stop_helped_num` int(4) NOT NULL default 0 comment '障碍好友帮助数',
+`knocked_num` int(4) NOT NULL default 0 comment '被砸数量',
+`got_achieve_num` int(4) NOT NULL default 0 comment '领取被砸成就奖励次数',
+`start_index` int(3) NOT NULL default 0 comment '起始索引值',
+`cur_index` int(3) NOT NULL default 0 comment '当前位置索引值',
+`map_min_index` int(3) NOT NULL default 0 comment '画面能显示的最小索引值',
+`map_max_index` int(3) NOT NULL default 0 comment '画面能显示的最大索引值',
+`fish_random_str` varchar(32) NOT NULL DEFAULT 0 COMMENT '获得购鱼机会的保底索引值',
+`fish_random_index` tinyint(2) NOT NULL DEFAULT 0 COMMENT '获得购鱼机会的保底索引值',
+`game_random_str` varchar(32) NOT NULL DEFAULT 0 COMMENT '掉落保底列表',
+`game_random_index` tinyint(2) NOT NULL DEFAULT 0 COMMENT '掉落保底索引值',
+`get_help_reward_second` int(10) NOT NULL DEFAULT 0 COMMENT '领取好友帮助获得的体力的时间戳，单位秒',
+`friend_help_str` varchar(256) NOT NULL DEFAULT "" COMMENT '体力的好友帮助列表',
+`version` int(4) NOT NULL comment '版本号',
+PRIMARY KEY(`uid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+

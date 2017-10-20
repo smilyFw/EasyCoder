@@ -1,0 +1,10 @@
+package -{packageName}.model;
+import com.twofish.fishbowl.common.dao.BaseDaoModel;
+import com.twofish.fishbowl.model.AmfSerializable;
+
+-{head}
+public class -{className} extends BaseDaoModel implements java.io.Serializable, AmfSerializable{
+	private static final long serialVersionUID = 1L;
+-{params}
+-{methods}
+}

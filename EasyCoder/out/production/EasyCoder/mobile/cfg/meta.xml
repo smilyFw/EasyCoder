@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!--每日赠送小滚筒数量-->
+    <dailyFreeWheel>3</dailyFreeWheel>
+    <!--首次打开活动赠送双倍道具-->
+    <firstDayDoubleProp>1</firstDayDoubleProp>
+    <!--首次打开活动赠送强化道具-->
+    <firstDayStrengthenProp>1</firstDayStrengthenProp>
+    <!--游戏消耗滚筒数-->
+    <gameCostWheel>1</gameCostWheel>
+    <!--购买-->
+    <saleList>
+        <item index="0" meta="2003001" count="1" price="6" itemId="2003001" itemName="购买小滚筒" name="小滚筒"/>
+        <item index="1" meta="2003002" count="1" price="4" itemId="2003002" itemName="购买强化道具" name="强化道具"/>
+        <item index="2" meta="2003003" count="1" price="5" itemId="2003003" itemName="购买双倍道具" name="双倍道具"/>
+        <item index="3" meta="2003004" count="1" price="3" itemId="2003004" itemName="购买油漆礼盒" name="油漆礼盒"/>
+    </saleList>
+    <!--满意度对应的奖励-->
+    <satisfactionRewardList>
+        <item index="0" satisfaction="20" type="NULL" meta="2003004" count="1" name="油漆礼盒"/>
+        <item index="1" satisfaction="60" type="NULL" meta="2003004" count="2" name="油漆礼盒"/>
+        <item index="2" satisfaction="100" type="NULL" meta="2003004" count="3" name="油漆礼盒"/>
+        <item index="3" satisfaction="160" type="REWARD_TYPE_FISH" meta="1011115" count="1" name="小小金粉刷匠"/>
+    </satisfactionRewardList>
+    <!--油漆礼盒开出的油漆个数池-->
+    <openBoxOilPaintNumPool>
+        <item index="0" count="1" cover="6"/>
+        <item index="1" count="2" cover="10"/>
+        <item index="2" count="3" cover="11"/>
+    </openBoxOilPaintNumPool>
+    <!--油漆礼盒开出的油漆种类池-->
+    <openBoxOilPaintTypePool>
+        <item index="0" count="1" cover="4"/>
+        <item index="1" count="2" cover="8"/>
+        <item index="2" count="3" cover="12"/>
+        <item index="3" count="4" cover="16"/>
+        <item index="4" count="5" cover="20"/>
+    </openBoxOilPaintTypePool>
+    <!--油漆兑换鱼奖励列表-->
+    <!-- 只使用 index="0" 项目 中的 require 作为 第一个 兑换 内容的 所需 数量  -->
+    <excFishList>
+        <item index="0" type="REWARD_TYPE_FISH" meta="101471" count="1" require="8" random="2" name="梅花鹿"/>
+        <item index="1" type="REWARD_TYPE_FISH" meta="101956" count="1" require="8" random="2" name="蓝天白云北极熊"/>
+        <item index="2" type="REWARD_TYPE_FISH" meta="101243" count="1" require="8" random="3" name="呆萌仔"/>
+        <item index="3" type="REWARD_TYPE_FISH" meta="101242" count="1" require="8" random="3" name="卖萌仔"/>
+    </excFishList>
+    <!--油漆兑换其他奖励列表-->
+    <excOtherList>
+        <item index="0" type="REWARD_TYPE_GENE_TOOL" meta="33001" count="3" require="10" name="唤醒之笛"/>
+        <item index="1" type="REWARD_TYPE_SHELL_TICKET" meta="19101" count="1" require="5" name="贝壳券"/>
+    </excOtherList>
+    <!--每局小游戏分数设定-->
+    <gameSetList>
+        <item index="0" min="0" max="19" satisfaction="5" meta="2003004" count="0" dcCat="scorelevel1" name="油漆礼盒"/>
+        <item index="1" min="20" max="29" satisfaction="6" meta="2003004" count="0" dcCat="scorelevel2" name="油漆礼盒"/>
+        <item index="2" min="30" max="39" satisfaction="8" meta="2003004" count="1" dcCat="scorelevel3" name="油漆礼盒"/>
+        <item index="3" min="40" max="10000" satisfaction="10" meta="2003004" count="2" dcCat="scorelevel4"
+              name="油漆礼盒"/>
+    </gameSetList>
+</root>

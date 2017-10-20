@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <method name="actInfo" comments="打开主面板">
+        <response>
+            <param name="result" type="int" comments="1:成功, 0:失败"/>
+            <param name="userData" type="FancyBallData" comments="用户数据"/>
+            <param name="config" type="FancyBallConfig" comments="配置数据"/>
+            <param name="firstLogin" type="boolean" comments="是否为首次登陆 "/>
+            <param name="firstLoginMirror" type="int" comments="首次登录赠送魔镜数"/>
+            <param name="dailyFreeTicket" type="int" comments="每日赠送入场券"/>
+        </response>
+    </method>
+
+    <method name="exc" comments="奖励兑换">
+        <request>
+            <param name="index" type="int" comments="索引"/>
+            <param name="num" type="int" comments="数量"/>
+        </request>
+        <response>
+            <param name="rewards" type="Array" comments="奖励"/>
+        </response>
+    </method>
+
+
+    <method name="switchStone" comments="兑换">
+        <request>
+            <param name="free" type="boolean" comments="是否免费"/>
+            <param name="type" type="int" comments="0-普通 1-高级"/>
+            <param name="costType" type="int" comments="消耗的石头类型 1-光之石 2-暗之石"/>
+            <param name="num" type="int" comments="兑换数量"/>
+        </request>
+    </method>
+
+    <method name="getAchieve" comments="领取成就">
+        <request>
+            <param name="num" type="int" comments="数量"/>
+        </request>
+        <response>
+            <param name="rewards" type="Array" comments="奖励"/>
+        </response>
+    </method>
+
+    <method name="buy" comments="购买">
+        <request>
+            <param name="index" type="int" comments="0-入场券 1-魔镜 2-魔法棒"/>
+            <param name="num" type="int" comments="数量"/>
+        </request>
+        <response>
+            <param name="sales" type="Array" comments="消耗"/>
+        </response>
+    </method>
+
+    <method name="startGame" comments="开始游戏">
+
+    </method>
+
+    <method name="endGame" comments="结束游戏">
+        <response>
+            <param name="gameResult" type="FancyBallGameResult" comments="游戏结果"/>
+        </response>
+    </method>
+
+    <method name="interact" comments="互动">
+        <request>
+            <param name="index" type="int" comments="小白人索引1-6"/>
+            <param name="type" type="int" comments="互动类型 1-treat 2-trick"/>
+        </request>
+        <response>
+            <param name="role" type="int" comments="1-天使 2-恶魔 "/>
+            <param name="addNum1" type="int" comments="获得光之石数量"/>
+            <param name="addNum2" type="int" comments="获得暗之石数量"/>
+        </response>
+    </method>
+
+</root>
+
+

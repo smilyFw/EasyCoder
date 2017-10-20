@@ -1,0 +1,13 @@
+    /**
+-{des}
+    */
+    public ActionForward -{methodName}(ActionMapping mapping, ActionForm form,
+            HttpServletRequest request, HttpServletResponse response) throws Exception {
+        int hostId = (Integer) request.getAttribute("hostid");
+-{setParam}
+        Map<String, Object> resultMap = -{ProjectId}Mgr.INSTANCE.-{methodName}(hostId-{params});
+        Map<String, Object> rt = new HashMap<String, Object>();
+        rt.put("rt", Amf3Util.serializeObject(resultMap));
+        Amf3UtilWrapper.writeFlashStream(response, rt);
+        return null;
+    }
